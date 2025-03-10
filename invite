@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite - Roteiro de Tascas</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f8f8f8; }
+        .container { width: 80%; margin: auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; }
+        h1 { color: #d9534f; }
+        .teams a { display: block; margin: 10px; padding: 10px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .teams a:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Convite para o Roteiro de Tascas 🎉</h1>
+    <p>Junta-te a nós para um aniversário inesquecível! Cada equipa tem seu próprio percurso. Escolhe a tua equipa e vê o roteiro!</p>
+
+    <div class="teams">
+        <a href="equipa1.html">Equipa 1</a>
+        <a href="equipa2.html">Equipa 2</a>
+        <a href="equipa3.html">Equipa 3</a>
+        <a href="equipa4.html">Equipa 4</a>
+        <a href="equipa5.html">Equipa 5</a>
+    </div>
+</div>
+
+</body>
+</html>
