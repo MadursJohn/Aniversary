@@ -23,7 +23,7 @@
         }
         h1 { color: #d9534f; }
         .info { margin: 20px 0; font-size: 18px; }
-        #countdown { font-size: 24px; font-weight: bold; color: #007bff; }
+        #countdown { font-size: 24px; font-weight: bold; color: #007bff; margin-top: 10px; }
         .hidden { display: none; }
     </style>
 </head>
@@ -32,7 +32,7 @@
 <div class="container">
     <h1>Não te armes em espertinha(o)! 🎉</h1>
     <p>Para as instruções ainda falta...</p>
-    <div id="countdown"></div>
+    <div id="countdown">Carregando...</div>
     <p id="message" class="hidden">🎊 Chegou o dia! Abre o convite e vê as instruções! 🎊</p>
 </div>
 
@@ -58,8 +58,10 @@
             `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }
 
-    updateCountdown();
-    const timer = setInterval(updateCountdown, 1000);
+    document.addEventListener("DOMContentLoaded", function () {
+        updateCountdown();
+        const timer = setInterval(updateCountdown, 1000);
+    });
 </script>
 
 </body>
