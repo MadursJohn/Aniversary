@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espera pelo Grande Dia!</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #121212;
-            color: white;
-            padding: 50px;
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            background-color: #f8f8f8; 
+            background-image: url('images/Original.png'); 
+            background-size: cover;
+            background-position: center;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        .container { 
+            width: 80%; 
+            margin: auto; 
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px gray; 
         }
-        h1 { color: #ffcc00; }
-        #countdown { font-size: 24px; margin: 20px 0; }
+        h1 { color: #d9534f; }
+        .info { margin: 20px 0; font-size: 18px; }
+        #countdown { font-size: 24px; font-weight: bold; color: #007bff; }
         .hidden { display: none; }
     </style>
 </head>
@@ -36,7 +38,7 @@
 
 <script>
     function updateCountdown() {
-        const eventDate = new Date("2024-03-28T00:00:00").getTime();
+        const eventDate = new Date("March 28, 2024 00:00:00").getTime();
         const now = new Date().getTime();
         const timeLeft = eventDate - now;
 
@@ -62,3 +64,4 @@
 
 </body>
 </html>
+
