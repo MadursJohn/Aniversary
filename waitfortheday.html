@@ -39,45 +39,11 @@
 
 <div class="container">
     <h1>Não te armes em espertinha(o)! 🎉</h1>
-    <p>Para as instruções ainda falta...</p>
+    <p>Para as instruções ainda falta...vão aparecer no dia 29 de Março</p>
     <div id="countdown" class="countdown"></div> <!-- Countdown visible from start -->
-    <p id="message" class="hidden">🎊 Chegou o dia! Abre o convite e vê as instruções! 🎊</p>
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const countdownElement = document.getElementById("countdown");
-        const messageElement = document.getElementById("message");
 
-        if (!countdownElement || !messageElement) {
-            console.error("Countdown or message element not found!");
-            return;
-        }
-
-        function updateCountdown() {
-            const eventDate = new Date(2024, 2, 28, 0, 0, 0).getTime(); // March = 2 (JS months start at 0)
-            const now = new Date().getTime();
-            const timeLeft = eventDate - now;
-
-            if (timeLeft <= 0) {
-                countdownElement.classList.add("hidden");
-                messageElement.classList.remove("hidden");
-                clearInterval(timer);
-                return;
-            }
-
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-
-        updateCountdown();
-        var timer = setInterval(updateCountdown, 1000);
-    });
-</script>
 
 </body>
 </html>
